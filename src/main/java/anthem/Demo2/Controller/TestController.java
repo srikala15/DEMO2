@@ -25,7 +25,7 @@ public class TestController {
 		
 	List<StudentVO> student=	testService.getStudentDetails();
 		
-		hm.put("status", "success");
+		hm.put("status", "sucess");
 		hm.put("response", student);
 		
 		   return new ResponseEntity<Object>(hm, HttpStatus.OK);
