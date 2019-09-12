@@ -5,10 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MainController {
-	
 	@RequestMapping("/")
 	public String testingbitbucket() {
 		return "it's working!!!";
 	}
-
 }
