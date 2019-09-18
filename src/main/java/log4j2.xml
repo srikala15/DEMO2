@@ -8,7 +8,6 @@
         <Console name="Console" target="SYSTEM_OUT" follow="true">
             <PatternLayout pattern="${LOG_PATTERN}" />
         </Console>
- 
         <RollingFile name="appLog"
             fileName="${APP_LOG_ROOT}/SpringBoot2App/application.log"
             filePattern="${APP_LOG_ROOT}/SpringBoot2App/application-%d{yyyy-MM-dd}-%i.log">
@@ -18,15 +17,12 @@
             </Policies>
             <DefaultRolloverStrategy max="1" />
         </RollingFile>
- 
     </Appenders>
     <Loggers>
- 
         <Logger name="com.howtodoinjava.app" additivity="false">
             <AppenderRef ref="appLog" />
             <AppenderRef ref="Console" />
         </Logger>
- 
         <Root level="debug">
             <AppenderRef ref="Console" />
         </Root>

@@ -1,6 +1,10 @@
 package anthem.Demo2.model;
 
+import java.io.Serializable;
+
+
 public class StudentVO {
+
 	private String sName;
 	private int Iid;
 	private String sEmail;
@@ -36,6 +40,11 @@ public class StudentVO {
 
 	public void setlMarks(long lMarks) {
 		this.lMarks = lMarks;
+	}
+
+	@Override
+	public String toString() {
+		return "StudentVO [sName=" + sName + ", Iid=" + Iid + ", sEmail=" + sEmail + ", lMarks=" + lMarks + "]";
 	}
 
 }

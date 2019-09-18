@@ -12,7 +12,4 @@ public class StudentListVO {
 	public void setStudents(List<StudentVO> students) {
 		this.students = students;
 	}
-	
-	
-
 }
